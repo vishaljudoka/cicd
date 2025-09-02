@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 . venv/bin/activate
-                pytest
+                PYTHONPATH=. pytest
                 '''
             }
         }
